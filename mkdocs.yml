@@ -1,0 +1,44 @@
+site_name: To-Do App Docs
+site_description: Documentation for the offline Laravel to-do app
+docs_dir: docs
+# Build to ./site (gitignored). Fully static, works offline.
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+  palette:
+    # Light mode
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Features: features.md
+  - Architecture: architecture.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details

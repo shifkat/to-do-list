@@ -31,7 +31,12 @@ php artisan test        # run the test suite
 ./vendor/bin/pint       # format PHP (Laravel Pint)
 npm run dev             # vite dev server
 npm run build           # production asset build
+mkdocs serve            # preview docs at http://127.0.0.1:8000 (see docs/)
+mkdocs build            # build static docs to ./site
 ```
+
+Docs live in `docs/` (MkDocs + Material theme, config in `mkdocs.yml`). Install
+the docs toolchain once with `pip install -r requirements-docs.txt`.
 
 ## Structure
 
